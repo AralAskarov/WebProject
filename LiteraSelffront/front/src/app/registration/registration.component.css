@@ -1,0 +1,194 @@
+.hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white; /* Цвет текста, чтобы он выделялся на фоне */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 200px 50px; /* Отступы внутри секции */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный оверлей, делает текст читабельным */
+    z-index: 1;
+  }
+  
+  .text-content {
+    position: relative;
+    z-index: 2; /* Помещает текст над оверлеем */
+  }
+  
+  .buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Стили для ссылок */
+  .text-content a {
+    color: #aad4ff;
+  }
+  
+  .text-content a:hover {
+    color: #fff;
+  }
+  
+  /* Стили для основного заголовка */
+  .hero-section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #f6efee;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Изменено на space-between для равномерного распределения контента */
+    width: 100%;
+  }
+  
+  .navbar-logo, .navbar-section-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo, .profile {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .logo-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #a55747;
+  }
+  
+  .navbar-item {
+    color: #a55747;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+  .navbar-item:hover {
+    background-color: #bcc5f1;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-section-left, .navbar-section-right {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .navbar-item {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .navbar-section-right {
+      align-items: center; /* Центрируем элементы в мобильной версии */
+    }
+  }
+
+  .registration-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/images/0cfc6bb1-7e29-421d-aa90-8898bcafee8b.jpg") no-repeat center center;
+    background-size: cover;
+    
+  }
+  
+  .registration-form {
+    margin-top: 115px;
+    padding: 4em; /* Увеличиваем внутренние отступы */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 50%; /* Занимаем половину ширины экрана */
+    min-height: 70vh; /* Минимальная высота от высоты экрана */
+    text-align: center;
+  }
+  
+  .registration-form h1 {
+    margin-bottom: 20px;
+    color: #ffc107;
+  }
+  
+  .registration-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  .registration-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #ffc107;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .registration-form button:hover {
+    background-color: #e0a800;
+  }
+  
+  .login-prompt {
+    margin-top: 20px;
+    color: #89edf2;
+  }
+  
+  .login-prompt a {
+    color: #89edf2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-prompt a:hover {
+    text-decoration: underline;
+  }
